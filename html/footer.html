@@ -1,4 +1,28 @@
 <div id="footerGfw"></div>
+<!--<div class="bg hidden"></div> 
+ <div class="tutorial-container hidden">
+    <div class="header">
+        <h2>Welcome to the Open Data Portal!</h2>
+        <a href="#" class="close">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-close"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="body">
+        <p>How to get started</p>
+        <ul class="bullets">
+            <li><strong>View data sets for your are of interest</strong> by searching the map or entering a location.</li>
+            <li><strong>Browse data</strong> by data set tags or by viewing featured data on the homepage.</li>
+            <li><strong>Search a specific data set...</strong></li>
+        </ul>
+    </div>
+    <div class="tutorial-footer">
+        <a class="btn green" id="accept" href="#">Continue</a>
+        <a class="btn white" target="_blank" href="http://www.globalforestwatch.org/howto/odp">Learn more</a>
+        <a class="btn white" href="mailto:astrong@wri.org">Request help</a>
+    </div>
+</div> -->
 
 <script>
 function onWindowLoad() {
@@ -2174,13 +2198,14 @@ function onWindowLoad() {
 
       $select.on('change', function(e) {
         var value = $(e.currentTarget).val();
-        window.location.href = "/datasets?q=" + value;
+        window.location.href = "/datasets?q=country" + value;
       });
     }
 
     function onError(err) {
       throw err;
     }
+    
 
     $.ajax({
       url: 'https://simbiotica.cartodb.com/api/v2/sql',
@@ -2191,6 +2216,32 @@ function onWindowLoad() {
       fail: onError
     });
   });
+  
+  
+  (function() {
+      
+    var accept = function(e){
+        e.preventDefault();
+        localStorage.setItem('accept', true);
+        $('.bg').addClass('hidden');
+        $('.tutorial-container').addClass('hidden');
+    }
+      
+    $('#accept').on('click', accept);
+    $('.close').on('click', accept);
+    $('.bg').on('click', accept);
+    $('html, body').on('keydown', function(e) {
+        if (e.which === 27 && $('.tutorial-container').length > 0) {
+            $('.bg').addClass('hidden');
+            $('.tutorial-container').addClass('hidden');
+        }
+    });
+
+    if(!localStorage.getItem('accept')) {
+        $('.bg').removeClass('hidden');
+        $('.tutorial-container').removeClass('hidden');
+    }
+  })();
   
   var title_bar = $('#title-bar-region');
   title_bar.hide();
