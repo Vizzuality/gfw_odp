@@ -2325,33 +2325,54 @@ function onWindowLoad() {
   var intro = introJs();
   intro.setOptions({
     disableInteraction: false,
-    showProgress: true,
-    steps: [{
-      intro: "Welcome to ODP! <b>I'm a bold string</b>"
-    }]
-    // steps: [{
-    //     intro: "Welcome to Global Forest Watch! <b>I'm a bold string</b>"
-    //   },{
-    //     element: '#layers-menu',
-    //     intro: "Here you have the layers.",
-    //     position: 'bottom'
-    //   },{
-    //     element: '#module-legend',
-    //     intro: "This is the legend.",
-    //     position: 'right'
-    //   },{
-    //     element: '#module-tabs',
-    //     intro: "This is the tab",
-    //     position: 'left'
-    //   },{
-    //     element: '#module-map-controls',
-    //     intro: 'Those are the map controls.',
-    //     position: 'right'
-    //   },{
-    //     element: '.timeline-container',
-    //     intro: 'This is the timeline.',
-    //     position: 'top'
-    //   }]
+    showProgress: false,
+    showStepNumbers: false,
+    steps: [
+      {
+        intro: "<p>Welcome to the Global Forest Watch Open Data Portal (ODP), where you can easily explore and download our data sets in a variety of formats. This quick walk-through will show you how to make use of some of the ODP’s features.</p><p>Already familiar with the ODP? Get started on your own.</p>",
+        tooltipClass: "is-fixed"
+      },
+      {
+        element: '#intro-step1',
+        intro: '<p><b>There are several ways to browse available data sets.</b> Click here to find some of the most popular GFW content</p>',
+        position: 'top'
+      },
+      {
+        element: '#intro-step2',
+        intro: '<p>Click the “Explore” buttons below to search for data by the categories used in the GFW interactive map</p>',
+        position: 'top'
+      },
+      {
+        element: '#intro-step3',
+        intro: '<p><b>You can also find data sets for your specific area or topic of interest</b>. Use the drop-down menu to search for data by country</p>',
+        position: 'top'
+      },
+      {
+        element: '#search-region',
+        intro: '<p>Enter keywords to search for data on particular topics (for example: “indigenous”)</p>',
+        position: 'bottom'
+      },
+      {
+        element: '#search-region',
+        intro: '<p><b>Or explore data in the map</b>. Check this box to search for data within the map</p>',
+        position: 'bottom'
+      },
+      {
+        element: '#map-bar-region',
+        intro: '<p>Zoom in and out of the map, or search for specific locations</p>',
+        position: 'bottom'
+      },
+      {
+        element: '#map-bar-region',
+        intro: '<p>Use these tools to change the basemap and adjust the map size</p>',
+        position: 'bottom'
+      }, 
+      {
+        element: '#intro-step8',
+        intro: '<p>Click here to learn more about the Open Data Portal and view additional How To materials!</p>',
+        position: 'bottom'
+      },      
+    ]
   });
   intro.start();
 
