@@ -2329,7 +2329,7 @@ function onWindowLoad() {
     showStepNumbers: false,
     steps: [
       {
-        intro: "<p>Welcome to the Global Forest Watch Open Data Portal (ODP), where you can easily explore and download our data sets in a variety of formats. This quick walk-through will show you how to make use of some of the ODP’s features.</p><p>Already familiar with the ODP? Get started on your own.</p>",
+        intro: "<p>Welcome to the Global Forest Watch Open Data Portal (ODP), where you can easily explore and download our data sets in a variety of formats. This quick walk-through will show you how to make use of some of the ODP’s features.</p><p>Already familiar with the ODP? <a href='#' class='close-intro'>Get started on your own.</a></p>",
         tooltipClass: "is-fixed"
       },
       {
@@ -2354,17 +2354,17 @@ function onWindowLoad() {
       },
       {
         element: '#search-region',
-        intro: '<p><b>Or explore data in the map</b>. Check this box to search for data within the map</p>',
+        intro: '<p><b>Or explore data in the map</b>. Check the box above to search for data within the map</p>',
         position: 'bottom'
       },
       {
         element: '#map-bar-region',
-        intro: '<p>Zoom in and out of the map, or search for specific locations</p>',
+        intro: '<p>Zoom in and out of the map, or search for specific locations using the buttons on the left side of the map</p>',
         position: 'bottom'
       },
       {
         element: '#map-bar-region',
-        intro: '<p>Use these tools to change the basemap and adjust the map size</p>',
+        intro: '<p>Use the tools on the right side of the map to change the basemap and adjust the map size</p>',
         position: 'bottom'
       }, 
       {
@@ -2375,6 +2375,15 @@ function onWindowLoad() {
     ]
   });
   intro.start();
+
+  $('.close-intro').on('click', function(e){
+    e && e.preventDefault();
+    intro.exit();
+  });
+  // we need to put a cookie 
+  intro.onexit(function() {
+    alert("cookie");
+  });  
 
 
 
