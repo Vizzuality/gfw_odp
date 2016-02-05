@@ -60,7 +60,7 @@ function onWindowLoad() {
 
       $select.on('change', function(e) {
         var value = $(e.currentTarget).val();
-        window.location.href = "/datasets?q=country" + value;
+        window.location.href = "/datasets?keyword=" + value;
       });
     }
 
@@ -113,7 +113,7 @@ function onWindowLoad() {
 
   $('.api').on('click', function() {
     $(this).css({
-      'background': '#f7f7f7  '
+      'background': '#f7f7f7  '
     });
 
     var visibility = $('.api-options').css('visibility');
