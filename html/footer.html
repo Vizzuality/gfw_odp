@@ -35,7 +35,7 @@ function(){!0==d._options.exitOnOverlayClick&&(y.call(d,a),void 0!=d._introExitC
 this._introItems.length)}var B=function(a){if("object"===typeof a)return new p(a);if("string"===typeof a){if(a=document.querySelector(a))return new p(a);throw Error("There is no element with given selector.");}return new p(document.body)};B.version="1.0.0";B.fn=p.prototype={clone:function(){return new p(this)},setOption:function(a,b){this._options[a]=b;return this},setOptions:function(a){var b=this._options,c={},d;for(d in b)c[d]=b[d];for(d in a)c[d]=a[d];this._options=c;return this},start:function(){J.call(this,
 this._targetElement);return this},goToStep:function(a){this._currentStep=a-2;"undefined"!==typeof this._introItems&&x.call(this);return this},nextStep:function(){x.call(this);return this},previousStep:function(){C.call(this);return this},exit:function(){y.call(this,this._targetElement);return this},refresh:function(){t.call(this,document.querySelector(".introjs-helperLayer"));t.call(this,document.querySelector(".introjs-tooltipReferenceLayer"));return this},onbeforechange:function(a){if("function"===
 typeof a)this._introBeforeChangeCallback=a;else throw Error("Provided callback for onbeforechange was not a function");return this},onchange:function(a){if("function"===typeof a)this._introChangeCallback=a;else throw Error("Provided callback for onchange was not a function.");return this},onafterchange:function(a){if("function"===typeof a)this._introAfterChangeCallback=a;else throw Error("Provided callback for onafterchange was not a function");return this},oncomplete:function(a){if("function"===
-typeof a)this._introCompleteCallback=a;else throw Error("Provided callback for oncomplete was not a function.");return this},onexit:function(a){if("function"===typeof a)this._introExitCallback=a;else throw Error("Provided callback for onexit was not a function.");return this}};return w.introJs=B});  
+typeof a)this._introCompleteCallback=a;else throw Error("Provided callback for oncomplete was not a function.");return this},onexit:function(a){if("function"===typeof a)this._introExitCallback=a;else throw Error("Provided callback for onexit was not a function.");return this}};return w.introJs=B});
 </script>
 
 
@@ -67,7 +67,7 @@ function onWindowLoad() {
     function onError(err) {
       throw err;
     }
-    
+
 
     $.ajax({
       url: 'https://simbiotica.cartodb.com/api/v2/sql',
@@ -78,17 +78,17 @@ function onWindowLoad() {
       fail: onError
     });
   });
-  
-  
+
+
   (function() {
-      
+
     var accept = function(e){
         e.preventDefault();
         localStorage.setItem('accept', true);
         $('.bg').addClass('hidden');
         $('.tutorial-container').addClass('hidden');
     }
-      
+
     $('#accept').on('click', accept);
     $('.close').on('click', accept);
     $('.bg').on('click', accept);
@@ -104,7 +104,7 @@ function onWindowLoad() {
         $('.tutorial-container').removeClass('hidden');
     }
   })();
-  
+
   var title_bar = $('#title-bar-region');
   title_bar.hide();
   $('#map-bar-region').after(title_bar);
@@ -217,12 +217,12 @@ function onWindowLoad() {
         element: '#map-bar-region',
         intro: '<p>Use the tools on the right side of the map to change the basemap and adjust the map size</p>',
         position: 'bottom'
-      }, 
+      },
       {
         element: '#intro-step8',
         intro: '<p>Click here to learn more about the Open Data Portal and view additional How To materials!</p>',
         position: 'bottom'
-      },      
+      },
     ]
   });
   var query = getQueryParams(document.location.search);
@@ -231,7 +231,7 @@ function onWindowLoad() {
       createCookie('tour-odp',true,60);
     }).onexit(function() {
       createCookie('tour-odp',true,60);
-    }).start(); 
+    }).start();
 
     $('.close-intro').on('click', function(e){
       e && e.preventDefault();
@@ -251,12 +251,12 @@ function onWindowLoad() {
   })
 
   if(Cookies.get('survey-odp') == 3) {
-  	$modal.addClass('-active');			
+  	$modal.addClass('-active');
   }
 
 	var surveyCount = (Cookies.get('survey-odp')) ? parseInt(Cookies.get('survey-odp')) : 1;
 	Cookies.set('survey-odp', surveyCount+1);
- 
+
 }
 
 function getQueryParams(qs) {
@@ -280,10 +280,10 @@ window.addEventListener("load", onWindowLoad, false);
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
+
           ga('create', 'UA-48182293-1', 'data.globalforestwatch.org');
           ga('send', 'pageview');
-          
+
         // Facebook
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -292,10 +292,10 @@ window.addEventListener("load", onWindowLoad, false);
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    
+
       // Twitter
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-    
+
       // Google Plus
       (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -303,7 +303,7 @@ window.addEventListener("load", onWindowLoad, false);
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
 
-			!function(e){if("function"==typeof define&&define.amd)define(e);else if("object"==typeof exports)module.exports=e();else{var n=window.Cookies,t=window.Cookies=e();t.noConflict=function(){return window.Cookies=n,t}}}(function(){function e(){for(var e=0,n={};e<arguments.length;e++){var t=arguments[e];for(var o in t)n[o]=t[o]}return n}function n(t){function o(n,r,i){var c;if("undefined"!=typeof document){if(arguments.length>1){if(i=e({path:"/"},o.defaults,i),"number"==typeof i.expires){var a=new Date;a.setMilliseconds(a.getMilliseconds()+864e5*i.expires),i.expires=a}try{c=JSON.stringify(r),/^[\{\[]/.test(c)&&(r=c)}catch(s){}return r=t.write?t.write(r,n):encodeURIComponent(String(r)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=encodeURIComponent(String(n)),n=n.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),n=n.replace(/[\(\)]/g,escape),document.cookie=[n,"=",r,i.expires&&"; expires="+i.expires.toUTCString(),i.path&&"; path="+i.path,i.domain&&"; domain="+i.domain,i.secure?"; secure":""].join("")}n||(c={});for(var p=document.cookie?document.cookie.split("; "):[],u=/(%[0-9A-Z]{2})+/g,d=0;d<p.length;d++){var f=p[d].split("="),l=f.slice(1).join("=");'"'===l.charAt(0)&&(l=l.slice(1,-1));try{var m=f[0].replace(u,decodeURIComponent);if(l=t.read?t.read(l,m):t(l,m)||l.replace(u,decodeURIComponent),this.json)try{l=JSON.parse(l)}catch(s){}if(n===m){c=l;break}n||(c[m]=l)}catch(s){}}return c}}return o.set=o,o.get=function(e){return o(e)},o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(n,t){o(n,"",e(t,{expires:-1}))},o.withConverter=n,o}return n(function(){})});      
+			!function(e){if("function"==typeof define&&define.amd)define(e);else if("object"==typeof exports)module.exports=e();else{var n=window.Cookies,t=window.Cookies=e();t.noConflict=function(){return window.Cookies=n,t}}}(function(){function e(){for(var e=0,n={};e<arguments.length;e++){var t=arguments[e];for(var o in t)n[o]=t[o]}return n}function n(t){function o(n,r,i){var c;if("undefined"!=typeof document){if(arguments.length>1){if(i=e({path:"/"},o.defaults,i),"number"==typeof i.expires){var a=new Date;a.setMilliseconds(a.getMilliseconds()+864e5*i.expires),i.expires=a}try{c=JSON.stringify(r),/^[\{\[]/.test(c)&&(r=c)}catch(s){}return r=t.write?t.write(r,n):encodeURIComponent(String(r)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=encodeURIComponent(String(n)),n=n.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),n=n.replace(/[\(\)]/g,escape),document.cookie=[n,"=",r,i.expires&&"; expires="+i.expires.toUTCString(),i.path&&"; path="+i.path,i.domain&&"; domain="+i.domain,i.secure?"; secure":""].join("")}n||(c={});for(var p=document.cookie?document.cookie.split("; "):[],u=/(%[0-9A-Z]{2})+/g,d=0;d<p.length;d++){var f=p[d].split("="),l=f.slice(1).join("=");'"'===l.charAt(0)&&(l=l.slice(1,-1));try{var m=f[0].replace(u,decodeURIComponent);if(l=t.read?t.read(l,m):t(l,m)||l.replace(u,decodeURIComponent),this.json)try{l=JSON.parse(l)}catch(s){}if(n===m){c=l;break}n||(c[m]=l)}catch(s){}}return c}}return o.set=o,o.get=function(e){return o(e)},o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(n,t){o(n,"",e(t,{expires:-1}))},o.withConverter=n,o}return n(function(){})});
 
 
 </script>
