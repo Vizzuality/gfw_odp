@@ -3781,12 +3781,12 @@ html {
 ._5a811508e1ab4ddbb79f7f0753d7d2d7_3 .download-menu *:not(:last-child) {display:none !important;} /*ifls 2000*/
 ._b753bb462b1f4cd896642c33c4b4e145_0 .download-menu *:not(:last-child) {display:none !important;} /*canada mining*/
 ._44bbf06379f545daa149ee7b237b9e18_1 .download-menu *:not(:last-child) {display:none !important;} /*Canada forest tenures*/
-._76d3c6a26c9c453595fd86a1de5228df_0 .download-menu:last-child .kml {display:none !important;}  /*GLAD Alerts*/
-._76d3c6a26c9c453595fd86a1de5228df_0 .download-menu:last-child .zip {display:none !important;}  /*GLAD Alerts*/
-._76d3c6a26c9c453595fd86a1de5228df_0 .download-menu:last-child .csv {display:none !important;}  /*GLAD Alerts*/
-._96d9920e898d47a5aef6fb4fa5c7dea0_0 .download-menu:last-child .kml {display:none !important;}  /*GLAD Alerts conf*/
-._96d9920e898d47a5aef6fb4fa5c7dea0_0 .download-menu:last-child .zip {display:none !important;}  /*GLAD Alerts conf*/
-._96d9920e898d47a5aef6fb4fa5c7dea0_0 .download-menu:last-child .csv {display:none !important;}  /*GLAD Alerts conf*/
+._194662b1470e4c5f81aa370395c75485_8 .download-menu:last-child .kml {display:none !important;}  /*GLAD Alerts*/
+._194662b1470e4c5f81aa370395c75485_8 .download-menu:last-child .zip {display:none !important;}  /*GLAD Alerts*/
+._194662b1470e4c5f81aa370395c75485_8 .download-menu:last-child .csv {display:none !important;}  /*GLAD Alerts*/
+._2f7fbcb1ca6542acb2086b93388d3af4_7 .download-menu:last-child .kml {display:none !important;}  /*GLAD Alerts conf*/
+._2f7fbcb1ca6542acb2086b93388d3af4_7 .download-menu:last-child .zip {display:none !important;}  /*GLAD Alerts conf*/
+._2f7fbcb1ca6542acb2086b93388d3af4_7 .download-menu:last-child .csv {display:none !important;}  /*GLAD Alerts conf*/
 ._e22b22b3525c46f3b35548daf6289903_1 .download-menu:last-child .kml {display:none !important;}  /*land rights*/
 ._e22b22b3525c46f3b35548daf6289903_1 .download-menu:last-child .zip {display:none !important;}  /*land rights*/
 ._e22b22b3525c46f3b35548daf6289903_1 .download-menu:last-child .csv {display:none !important;}  /*land rights*/
@@ -3799,6 +3799,22 @@ html {
 ._eca9f0db800a4d5c83bbf7f231c67949_0 .download-menu:last-child .kml {display:none !important;}  /*wood fiber*/
 ._eca9f0db800a4d5c83bbf7f231c67949_0 .download-menu:last-child .zip {display:none !important;}  /*wood fiber*/
 ._eca9f0db800a4d5c83bbf7f231c67949_0 .download-menu:last-child .csv {display:none !important;}  /*wood fiber*/
+._9db9a0e6a1154db182f79a5760963459_0 .download-menu:last-child .kml {display:none !important;}  /*rtrs*/
+._9db9a0e6a1154db182f79a5760963459_0 .download-menu:last-child .zip {display:none !important;}  /*rtrs*/
+._9db9a0e6a1154db182f79a5760963459_0 .download-menu:last-child .csv {display:none !important;} /*rtrs*/
+/*._fa7ca15a38c84db2871e1e9a5570d47e .download-menu *:not(:last-child) {display:none !important;} /*soy*/
+._fa7ca15a38c84db2871e1e9a5570d47e .download-menu:last-child .tiff {display:none !important;}  /*rtrs*/
+._fa7ca15a38c84db2871e1e9a5570d47e .download-menu:last-child .jpeg {display:none !important;}  /*rtrs*/
+._fa7ca15a38c84db2871e1e9a5570d47e .download-menu:last-child .png {display:none !important;} /*rtrs*/
+._6e564ab96189422aa636ea8c0ab9f4ee_0 .download-menu:last-child .kml {display:none !important;} /*fire history*/
+._6e564ab96189422aa636ea8c0ab9f4ee_0 .download-menu:last-child .zip {display:none !important;} /*fire history*/
+._6e564ab96189422aa636ea8c0ab9f4ee_0 .download-menu:last-child .csv {display:none !important;} /*fire history*/
+._0c4e389e29d5435fb603b761ef2dd745 .download-menu:last-child .tiff {display:none !important;} /*fire risk*/
+._0c4e389e29d5435fb603b761ef2dd745 .download-menu:last-child .png {display:none !important;} /*fire risk*/
+._0c4e389e29d5435fb603b761ef2dd745 .download-menu:last-child .jpeg {display:none !important;} /*fire risk*/
+._4363b49371074b859d6e78a066546b81 .download-menu:last-child .jpeg {display:none !important;} /*dslr*/
+._4363b49371074b859d6e78a066546b81 .download-menu:last-child .png {display:none !important;} /*dslr*/
+._4363b49371074b859d6e78a066546b81 .download-menu:last-child .tiff {display:none !important;} /*dslr*/
 ._2aaf839424e44e96a09eff4dcdbf70cf_0 .download-menu:last-child .kml {display:none !important;}  /*mining*/
 ._2aaf839424e44e96a09eff4dcdbf70cf_0 .download-menu:last-child .zip {display:none !important;}  /*mining*/
 ._2aaf839424e44e96a09eff4dcdbf70cf_0 .download-menu:last-child .csv {display:none !important;}  /*mining*/
